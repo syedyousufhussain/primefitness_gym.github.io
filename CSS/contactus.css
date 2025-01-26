@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/sven-mieke-MsCgmHuirDo-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbr {
+    background-color: rgb(12, 1, 1, 0.4) !important;
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+.navbr {
+    height: 6vw;
+}
+
+.nav-cont {
+    color: white !important;
+    font-size: 1.5vw;
+    margin-top: 0.8rem !important;
+    padding: 1rem !important;
+}
+
+.navbrbk {
+    background-color: transparent !important;
+}
+
+.nav-cont:hover {
+    background-color: white !important;
+    color: black !important;
+    transition: 0.6s !important;
+    border-radius: 0.6rem !important;
+}
+
+.navbutn {
+    width: 180px !important;
+    margin-left: 60px !important;
+    background-color: transparent !important;
+    color: white !important;
+    font-size: 1.5vw;
+    padding: 12px !important;
+    border-color: white !important;
+}
+
+.navbutn:hover {
+    background-color: white !important;
+    color: rgb(63, 104, 239) !important;
+    box-shadow: 0 0 18px rgb(63, 104, 239) !important;
+    transition: 0.6s !important;
+}
+
+.logo {
+    font-size: 4vw !important;
+    color: white !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+}
+
+.header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 10vw;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    z-index: 2;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-image {
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto;
+}
+
+.faq-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.formlbl {
+    color: white !important;
+    font-size: 1.6rem !important;
+}
+
+.frmbtn {
+    background-color: black !important;
+    width: 20rem;
+    margin-left: 9rem !important;
+    margin-bottom: 8px !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+}
+
+.foter {
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    color: azure !important;
+    width: 100% !important;
+}
+
+@media(max-width:600px) {
+    .navbr {
+        width: 100% !important;
+        min-width: 400px !important;
+        height: 480vh !important;
+        position: relative !important;
+        padding: 1rem !important;
+    }
+
+    .nav-cont {
+        margin-top: 0.3rem !important;
+        padding: 0.6rem !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+
+    .navshrk {
+        margin-right: 200px !important;
+        position: relative !important;
+    }
+
+    .navbrbk {
+        background-color: rgb(5, 0, 0, 0.8) !important;
+        z-index: -1 !important;
+        backdrop-filter: blur(20px) !important;
+        width: 200px !important;
+    }
+
+    .navbutn {
+        width: 200px !important;
+        font-size: 18px !important;
+    }
+
+    .logo {
+        font-size: 3rem !important;
+        color: white !important;
+        font-weight: 800 !important;
+        cursor: pointer !important;
+        transition: 0.3s ease-in-out !important;
+        margin: 0.8rem !important;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    .frmbtn {
+        width: 140px !important;
+        transition: 0.6s !important;
+    }
+
+    .foter {
+        width: 100% !important;
+        max-width: 991px !important;
+    }
+}
+
+@media(min-width:600px) and (max-width:767px) {
+    .navbr {
+        width: 100% !important;
+        min-width: 400px !important;
+        height: 30vh !important;
+        position: relative !important;
+    }
+
+    .nav-cont {
+        margin-top: 0.3rem !important;
+        padding: 0.6rem !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+
+    .navshrk {
+        margin-right: 200px !important;
+        position: relative !important;
+    }
+
+    .navbrbk {
+        background-color: rgb(5, 0, 0, 0.8) !important;
+        z-index: -1 !important;
+        backdrop-filter: blur(20px) !important;
+        width: 200px !important;
+    }
+
+    .navbutn {
+        width: 200px !important;
+        font-size: 18px !important;
+    }
+
+    .logo {
+        font-size: 3rem !important;
+        color: white !important;
+        font-weight: 800 !important;
+        cursor: pointer !important;
+        transition: 0.3s ease-in-out !important;
+        margin: 0.8rem !important;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    .frmbtn {
+        width: 140px !important;
+        transition: 0.6s !important;
+    }
+
+    .foter {
+        width: 100% !important;
+        max-width: 991px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .faq-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.5s;
+    }
+
+    .faq-image {
+        width: 45%;
+        height: auto;
+    }
+
+    .faq-content {
+        width: 45%;
+        margin-left: 20px;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 776px) {
+    .frmbtn {
+        width: 60%;
+        margin-left: 6rem !important;
+        transition: 0.9s;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .navshrk {
+        margin-right: 200px !important;
+        position: relative !important;
+        background-color: rgb(5, 0, 0) !important;
+        padding: 5rem !important;
+    }
+
+    .navbutn {
+        width: 200px !important;
+        font-size: 18px !important;
+        margin-left: 26rem !important;
+    }
+}
+
+@media(max-width:991px) {
+    .navbr {
+        width: 100% !important;
+        min-width: 400px !important;
+        height: 30vh !important;
+        position: relative !important;
+
+    }
+
+    .nav-cont {
+        margin-top: 0.3rem !important;
+        padding: 0.6rem !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+
+    .navshrk {
+        margin-right: 200px !important;
+        position: relative !important;
+    }
+
+    .navbrbk {
+        background-color: rgb(5, 0, 0, 0.8) !important;
+        z-index: -1 !important;
+        backdrop-filter: blur(20px) !important;
+        width: 200px !important;
+    }
+
+    .navbutn {
+        width: 200px !important;
+        font-size: 18px !important;
+    }
+
+    .logo {
+        font-size: 3rem !important;
+        color: white !important;
+        font-weight: 800 !important;
+        cursor: pointer !important;
+        transition: 0.3s ease-in-out !important;
+        margin: 0.8rem !important;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    .faq-content {
+        margin-left: 200px !important;
+        margin-right: 200px !important;
+        position: relative !important;
+        transition: 0.7s !important
+    }
+
+    .frmbtn {
+        width: 140px !important;
+        transition: 0.6s !important;
+    }
+
+    .foter {
+        width: 100% !important;
+        max-width: 991px !important;
+    }
+}
